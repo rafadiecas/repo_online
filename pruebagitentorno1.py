@@ -1,18 +1,11 @@
-a=2
-b=3
-c=3
+# Haciendo uso del debugger, corrige los errores sintácticos del siguiente programa:
+def ejercicio1bis():
+    password = input("Introduce la contraseña: ")           #las comillas estan mal puestas
+    if password in ("sesamo"):                              #igual , estan mal las comillas y poner la palabra entre parentesis
+        print('Pasa')
+    else:                                                    #faltan cerrar bien el else:
+        print('No pasa')
 
-if c==b:
-    print(True)
-else:
-    print("Tu no esta bueno")
-
-suma=a+b
-
-print(suma)
-
-
-#Este codigo es de prueba solo para ir tocando cosas.
 
 
 #Ejercicio3
@@ -24,3 +17,15 @@ def aplica_iva(base):     # el primer error es que aplica_iva no esta definido, 
     return base
 # base = input("Introduce la base imponible de la factura: ")
 # print(aplica_iva(base))
+
+#Ejercicio4
+
+u = (1, 2, 3)
+v = (4, 5, 6)
+def producto_escalar(u, v):
+    for i in range(len(u)):
+        u[i] *= v[i]
+    return sum(u)
+print(producto_escalar(u, v))
+
+#el primer error lo da en la linea 27 indicando que tupla no soporta esos item
