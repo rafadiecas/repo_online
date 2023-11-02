@@ -1,10 +1,3 @@
-# Haciendo uso del debugger, corrige los errores sintácticos del siguiente programa:
-def ejercicio1bis():
-    password = input("Introduce la contraseña: ")           #las comillas estan mal puestas
-    if password in ("sesamo"):                              #igual , estan mal las comillas y poner la palabra entre parentesis
-        print('Pasa')
-    else:                                                    #faltan cerrar bien el else:
-        print('No pasa')
 
 
 
