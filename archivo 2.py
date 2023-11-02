@@ -1,5 +1,4 @@
-lista=[1,2,3]
+lista=[1,2,3,4,5,6]
 
-def imprime_elementos_lista():
-	for a in range(len(lista)):
-    		print(lista[a])
+for a in range(len(lista)):
+    print(lista[a])
