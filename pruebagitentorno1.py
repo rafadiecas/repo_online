@@ -1,14 +1,4 @@
-# Haciendo uso del debugger, corrige los errores sintácticos del siguiente programa:
-def ejercicio1bis():
-    password = input("Introduce la contraseña: ")           #las comillas estan mal puestas
-    if password in ("sesamo"):                              #igual , estan mal las comillas y poner la palabra entre parentesis
-        print('Pasa')
-    else:                                                    #faltan cerrar bien el else:
-        print('No pasa')
 
-
-
-#Ejercicio3
 def aplica_iva(base):     # el primer error es que aplica_iva no esta definido, al ser secuencial aun no ha leido el def aplica iva, solucion poner el def primero.
     iva = 1.21
     base = int(base) / iva               #segundo error es que nos dice que iva no esta definido, para arreglarlo añadimos el iva = 21 dentro de la funcion
